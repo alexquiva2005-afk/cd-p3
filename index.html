@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Despliegue - GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .plataforma {
+            font-weight: bold;
+            color: #24292e; /* Color oscuro de GitHub */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> ¡Despliegue Exitoso! </h1>
+        <p>Este es el código simple para probar la funcionalidad de **<span class="plataforma">GitHub Pages</span>**.</p>
+        <p>La URL pública confirma que el hosting funciona correctamente.</p>
+        <p id="timestamp"></p>
+    </div>
+    <script>
+        document.getElementById('timestamp').innerText = 
+            "Hora de carga: " + new Date().toLocaleTimeString('es-ES');
+    </script>
+</body>
+</html>
